@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 import servicesStyles from '../styles/inHome.module.css'
 import formStyles from '../styles/forms.module.css'
 
-import InHomeTrainingForm from '../components/InHomeTrainingForm'
+import InHomeTrainingForm from '../components/inHomeTrainingForm'
 
 export default function Home () {
   return (
