@@ -1,209 +1,182 @@
 import Head from 'next/head'
-
+import Layout, { siteTitle } from '../components/layout'
+import HubspotForm from '../components/hubspotForm'
+import Link from 'next/link'
+import utilStyles from '../styles/utils.module.css'
+import homeStyles from '../styles/home.module.css'
 export default function Home() {
   return (
-    <div className="container">
+    <Layout home>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
+
       </Head>
+      <main className={homeStyles.body}>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <section className={homeStyles.heroBanner}>
+      <div className={homeStyles.heroBannerContent}>
+        <h1 className={homeStyles.mainHeader}>
+        Are you ready to <br />MOVE BETTER, <br />FEEL BETTER, <br />and BE BETTER?
         </h1>
+        <p className={homeStyles.subHead}>
+        Vetted Trainers are dedicated to the success of our clients and will provide you with the knowledge and guidance to reach your goals!
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
+
         </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
-      </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+    </section>
+
+    <section className={homeStyles.contentBlock}>
+      <div className={homeStyles.contentContainer}>
+        <h1 className={homeStyles.contentHeader}>
+          Vetted Trainers<span> Virtual Training</span>
+          </h1>
+
+      <hr className={homeStyles.divider} />
+
+      <p className={` ${homeStyles.content} ${homeStyles.centered} `}>We have deployed our new virtual training program so you can have a personalized training program right from your own home!</p>
+      <div className={homeStyles.iframeContainer}>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/hbzNT-N01c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+    <Link href="/virtual-training-intake">
+      <a className={utilStyles.colorInherit}>
+      <div className={homeStyles.button}>
+        Go Virtual
+      </div></a>
+    </Link>
+
+
+      </div>
+    </section>
+
+    <section className={homeStyles.about}>
+
+      <h1 className={homeStyles.contentHeader}>What is Vetted Trainers?</h1>
+
+      <hr className={homeStyles.divider} />
+
+      <p className={` ${homeStyles.content} ${homeStyles.centered} `}>Vetted Trainers is a team of top notch trainers who combine the best of strength training, mobility, and tissue work to optimize your human movement. We also use various modalities (private gym sessions, in home sessions, and virtual sessions) to meet the needs of our clients so you can become stronger and healthier no matter where you are!</p>
+
+
+        <img src="/images/joel_nicole_squats.jpg" />
+
+    </section>
+
+    <section className={homeStyles.mail}>
+    <div className={homeStyles.overlay}>
+      <div>
+        <h3>Keep up with your fitness goals</h3>
+        <p>Enter your email to join our mailing list and receive the latest training videos, excercises, promotions, and more. </p>
+
+
+<HubspotForm />
+
+      </div>
+
+      <div>
+      </div>
+</div>
+    </section>
+
+
+
+    <section className={homeStyles.servicesContainer}>
+
+<h2 className={homeStyles.contentHeader}>PERSONAL TRAINING SERVICES</h2>
+<hr className={homeStyles.divider} />
+
+<div className={homeStyles.services}>
+      <div className={homeStyles.singleService}>
+        <img src="/images/IMG_5923.jpg" />
+        <h2>Private Gym Personal Training</h2>
+        <hr className={homeStyles.divider} />
+
+        <p>Are you concerned with going to a big commercial gym due to the Covid-19 pandemic? Come train in our appointment only, private gym.</p>
+
+        <Link href="/private-gym-training-intake">
+        <a className={utilStyles.colorInherit}>
+        <div className={homeStyles.button}>
+          Book Now
+        </div>
         </a>
-      </footer>
+        </Link>
+      </div>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+      <div className={homeStyles.singleService}>
+      <img src="/images/VT-36.jpg" />
+      <h2>In Home Personal Training</h2>
+      <hr className={homeStyles.divider} />
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+      <p>A Vetted Trainer will take you through a workout from the privacy and comfort of your own home. You don't even need any equipment. Stay safe and in shape while you exercise from home!</p>
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      <Link href="/in-home-training-intake">
+      <a className={utilStyles.colorInherit}><div className={homeStyles.button}>
+        Schedule
+      </div></a>
+      </Link>
+      </div>
 
-        footer img {
-          margin-left: 0.5rem;
-        }
+      <div className={homeStyles.singleService}>
+      <img src="/images/VT-33.jpg" />
+      <h2>Virtual Training</h2>
+      <hr className={homeStyles.divider} />
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      <p>This is your germ free option! Your Vetted Trainer will remotely take you through a mobility, flexibility, and strength workout.
+</p>
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
+<Link href="/virtual-training-intake">
+  <a className={utilStyles.colorInherit}><div className={homeStyles.button}>
+    Sign Up
+    </div></a>
+</Link>
+      </div>
+</div>
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
+    </section>
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
+    <section className={homeStyles.testimonialsContainer}>
+    <div className={homeStyles.testimonials}>
+    <h1 className={homeStyles.contentHeader}>Customer Reviews</h1>
 
-        .title,
-        .description {
-          text-align: center;
-        }
+    <hr className={homeStyles.divider} />
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+    <h3>Cathy Watkins</h3>
+    <p>"Vetted Trainers knowledge of the human body is beyond amazing. They helped me complete a goal of competing in my first-ever U.S. Strong Woman competition. Without him I would have never challenged myself and succeeded!"</p>
+    <img src="/images/cathy-testimonial.jpg" className={homeStyles.testimonialPic} />
     </div>
+    </section>
+
+
+
+<section className={homeStyles.footer}>
+
+  <div className={homeStyles.logo}>
+    <img src="/images/vetted-logo.png" />
+  </div>
+
+<div className={homeStyles.footerContact}>
+
+<h3>5712 Industry Lane Unit E, Frederick MD, 21703</h3>
+<h3>vettedtrainers@gmail.com</h3>
+<h3>(240)-409-2975</h3>
+
+
+  <div className={homeStyles.socialMedia}>
+  <img src="/images/yt-red.png" />
+  <img src="/images/fb-icon.png" />
+  <img src="/images/ig-icon.png" />
+
+  </div>
+  </div>
+
+</section>
+
+
+
+      </main>
+    </Layout>
   )
 }

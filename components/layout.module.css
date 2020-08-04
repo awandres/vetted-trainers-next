@@ -1,0 +1,54 @@
+.container {
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.contentContainer {
+  max-width:54rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color:#181818;
+  padding:30px;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 10rem;
+  height: 8rem;
+  margin-left:0px;
+  margin-right:250px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+@media screen and (min-width:769px) {
+  .header {
+    min-width:1400px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header {
+    display:none!important
+  }
+}
+
+@media screen and (max-width:440px) {
+  .header {
+    display:none!important
+  }
+}

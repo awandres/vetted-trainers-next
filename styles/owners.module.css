@@ -1,0 +1,561 @@
+.container {
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.contentContainer {
+  max-width:60rem;
+}
+
+.body {
+  background-color:#181818;
+  margin:0 0;
+}
+
+.heroBanner {
+  background-image: url('/images/guy-working-out.jpg');
+  height:500px;
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:0 -200px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroBannerContent {
+  width:1000px;
+  height:auto;
+  background-color:rgba(20,20,20,.2);
+  border-radius:10px;
+
+}
+
+.button {
+  background-color:#50BFF4;
+  align-self:center;
+  margin:20px auto;
+  color:white;
+  height:70px;
+  width:250px;
+  font-size:1.3rem;
+  display:flex;
+  border-radius:30px;
+  justify-content:  center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight:400;
+  box-shadow: 1px 1px 3px black;
+  color:black;
+}
+
+.subHead {
+  font-size:1.6rem;
+  color:white;
+  display:block;
+  text-align: center;
+  margin-top:-20px;
+}
+
+.capitalize {
+  text-transform:uppercase;
+}
+
+.darken {
+  background-color:rgba(15,15,15,.8)
+}
+
+.mainHeader {
+  font-size:6rem;
+  text-transform: uppercase;
+  color:white;
+  /* padding:30px; */
+  /* padding-top:10px; */
+  text-align: center;
+  /* margin-bottom:-10px; */
+  text-shadow: 2px 2px 5px black;
+  /* line-height:100px; */
+  font-weight:300;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color:#181818;
+  padding:30px;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 10rem;
+  height: 8rem;
+  margin-left:-50px;
+  margin-right:250px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+
+.contentContainer {
+  max-width:1200px;
+  background-color:#151515;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentContainer h2 {
+  color:white;
+  font-size:3rem;
+  line-height: normal;
+  font-weight:200;
+  text-align: center;
+  margin-top:80px;
+
+}
+
+.contentBlock {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentHeader {
+  font-size:3.3rem;
+  color:white;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.blue {
+  color:#50BFF4
+}
+
+.divider {
+  width:50%;
+  color:#50BFF4;
+  background-color:#50BFF4;
+  border-color: #50BFF4;
+  margin:30px 0px;
+}
+
+.content {
+  font-size:24px;
+  color:white;
+  font-weight:100;
+  letter-spacing: 1px;
+  padding:0px 120px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.overlay {
+  background-color:rgba(35,35,35,.8);
+  width:100%;
+  height:100%;
+  padding-left:400px;
+  padding-right:300px;
+  /* margin:50px 0px; */
+
+
+}
+
+.mail {
+  /* background-color:#252525; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  background-image: url('/images/joel_gym.jpg');
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position: 0px -200px;
+  background-size: cover;
+}
+
+
+
+
+.servicesContainer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#252525;
+}
+
+.services {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  padding:50px 50px 25px 50px;
+  margin: 0 auto;
+}
+
+
+
+.footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:80px;
+}
+
+.footerContact {
+  margin-left:40px;
+  margin-top:70px;
+}
+
+.footerContact h3 {
+  color:white;
+  font-weight:400;
+  letter-spacing: 1px;
+}
+
+.socialMedia img {
+  margin:20px;
+}
+
+.socialMedia {
+margin-left:000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+
+.serviceSection {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  background-color: #252525;
+  padding:80px 0px;
+}
+
+.serviceSectionBlack {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  background-color: #151515;
+  padding:80px 0px;
+}
+
+
+
+.videoEmbed {
+  width:30%;
+  display:block;
+  margin-left:-50px;
+  margin-right:50px;
+}
+
+.serviceContent {
+  width:60%;
+  margin-left:50px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.serviceContent p {
+  padding:0px 100px;
+  color:white;
+  font-weight:200;
+  font-size:24px;
+  /* letter-spacing: 1px; */
+}
+
+.contentSubhead {
+  font-size:2.5rem;
+  color:white;
+  font-weight:300;
+  margin-bottom:0px;
+}
+
+.contentContainer p {
+  color:white;
+  font-size:24px;
+  font-weight:100;
+}
+
+.contentContainer ul {
+
+  list-style: none; /* Remove default bullets */
+  padding:0px 300px;
+}
+
+.contentContainer ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #50BFF4; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+
+}
+
+.contentContainer ul li {
+  margin:8px 0px;
+  color:white;
+  font-size:24px;
+  font-weight:100;
+}
+
+.formContainer {
+padding:0px 300px;
+margin-top:0px;
+}
+
+.bioContainer {
+  background-color:#353535;
+}
+
+.bioContent {
+  max-width:1500px;
+  width:85%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:100px;
+}
+
+.bioText {
+  background-color:#151515;
+  padding:50px;
+  z-index:1;
+}
+
+.bioText h1 {
+  font-size:3rem;
+  color:white;
+  font-weight:100;
+}
+
+.bioText p {
+  font-size:23px;
+  color:white;
+  font-weight:100;
+}
+
+.bioImage {
+  width:550px;
+  margin-left:-50px;
+  z-index:0;
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media screen and (min-width:769px) {
+  .bioContent {
+    min-width:1231px;
+  }
+}
+
+
+/* TABLET */
+@media screen and (max-width:768px) {
+.heroBanner {
+  background-position: 0px -100px;
+  height:400px;
+  width:auto;
+
+}
+
+.heroBannerContent {
+  width:auto;
+}
+
+.mainHeader {
+  font-size:3.5rem;
+  line-height: normal;
+}
+
+.subHead {
+  font-size:1.4rem;
+  margin-top:10px;
+  padding:0px 30px;
+}
+
+.contentHeader {
+  line-height: normal;
+}
+
+.singleService {
+  width:220px;
+}
+
+.serviceSection {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceContent {
+  width:95%;
+  margin-left:0px;
+}
+
+.serviceSectionBlack {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframeContainerLeft {
+  width:70%;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.leftImage {
+  width:80%;
+  margin-right:0px;
+  height:400px;
+}
+
+.leftImage2 {
+  width:80%;
+  margin-right:0px;
+  height:400px;
+  background-position:0px 0px;
+  background-repeat: no-repeat;
+}
+
+.contentContainer {
+  width:100%;
+}
+
+.footer {
+  margin-bottom:500px;
+}
+
+.about p {
+  padding:0px 40px;
+}
+
+.overlay {
+  padding:0px 70px;
+}
+
+.singleService img {
+  height:auto;
+}
+
+.singleService h2 {
+  text-align:center;
+}
+
+.singleService .button {
+  font-size:1.2rem;
+  width:140px!important;
+}
+
+.testimonialsContainer {
+  background-position: 0px 0px;
+}
+
+
+.footerContact h3 {
+  margin-left:45px;
+}
+
+.footer {
+  padding:30px;
+  padding-top:0px;
+}
+
+.contentContainer h2 {
+  font-size:2.5rem;
+  padding:0px 50px;
+}
+.contentContainer p {
+  padding:0px 80px;
+}
+.contentContainer ul {
+  padding:0px 120px;
+}
+.formContainer {
+  padding:30px 120px;
+}
+
+.bioContent {
+  flex-direction: column;
+  padding:50px;
+}
+
+.bioImage {
+  margin-left:0px;
+}
+
+
+}
+
+
+
+
+/* MOBILE */
+
+
+@media screen and (max-width:440px) {
+  .bioContent {
+    max-width:1500px;
+    width:95%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+  }
+  .bioImage {
+    width:auto;
+    margin-left:0px;
+    z-index:0;
+  }
+
+  .footerContact h3 {
+    font-size:13px;
+  }
+
+  .footer {
+    padding:30px;
+    /* margin-bottom:400px; */
+  }
+
+  .socialMedia img {
+    width:40px;
+    margin:8px;
+  }
+}

@@ -1,0 +1,703 @@
+.container {
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.iframeContainer {
+  width:60%;
+  margin:0 auto;
+  display:none;
+}
+
+
+.videoEmbedMobile {
+  display:none;
+}
+
+.contentContainer {
+  max-width:60rem;
+}
+
+.body {
+  background-color:#181818;
+  margin:0 0;
+}
+
+.heroBanner {
+  background-image: url('/images/OTT_VT-10.jpg');
+  height:600px;
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:0 -400px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroBannerContent {
+  width:1000px;
+  height:auto;
+  background-color:rgba(20,20,20,.2);
+  border-radius:10px;
+
+}
+
+.button {
+  background-color:#50BFF4;
+  align-self:center;
+  margin:20px auto;
+  color:white;
+  height:70px;
+  width:250px;
+  font-size:1.3rem;
+  display:flex;
+  border-radius:30px;
+  justify-content:  center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight:400;
+  box-shadow: 1px 1px 3px black;
+  color:black;
+}
+
+.subHead {
+  font-size:1.6rem;
+  color:white;
+  display:block;
+  text-align: center;
+  margin-top:-20px;
+}
+
+.capitalize {
+  text-transform:uppercase;
+}
+
+.darken {
+  background-color:rgba(15,15,15,.8)
+}
+
+.mainHeader {
+  font-size:10rem;
+  text-transform: uppercase;
+  color:white;
+  /* padding:30px; */
+  /* padding-top:10px; */
+  text-align: center;
+  /* margin-bottom:-10px; */
+  text-shadow: 2px 2px 5px black;
+  /* line-height:100px; */
+  font-weight:200;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color:#181818;
+  padding:30px;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 10rem;
+  height: 8rem;
+  margin-left:-50px;
+  margin-right:250px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+
+.contentContainer {
+  max-width:1400px;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentBlock {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentHeader {
+  font-size:3.3rem;
+  color:white;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.blue {
+  color:#50BFF4
+}
+
+.divider {
+  width:50%;
+  color:#50BFF4;
+  background-color:#50BFF4;
+  border-color: #50BFF4;
+  margin:30px 0px;
+}
+
+.content {
+  font-size:24px;
+  color:white;
+  font-weight:100;
+  letter-spacing: 1px;
+  padding:0px 120px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.overlay {
+  background-color:rgba(35,35,35,.8);
+  width:100%;
+  height:100%;
+  padding-left:400px;
+  padding-right:300px;
+  /* margin:50px 0px; */
+
+
+}
+
+.mail {
+  /* background-color:#252525; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  background-image: url('/images/joel_gym.jpg');
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position: 0px -200px;
+  background-size: cover;
+}
+
+.mail h3 {
+  font-size: 3.3rem;
+  color:white;
+  font-weight:300;
+  margin-bottom:0px;
+}
+
+.mail p {
+  color:white;
+  font-size:24px;
+  font-weight:200;
+}
+
+.mail img {
+  width:500px;
+  margin-left:30px;
+}
+
+.about {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about p {
+  padding:0px 300px;
+}
+
+.about ul {
+  width:800px;
+  margin:0 auto;
+  color:white;
+  font-weight:100;
+  font-size:24px;
+  letter-spacing: 1px;
+}
+
+.about {
+  background-color:#252525;
+  margin:50px 0px;
+  margin-bottom:0px;
+  padding-bottom:50px;
+}
+
+.about img {
+  width:500px;
+  margin:50px 0px;
+}
+
+.servicesContainer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#252525;
+}
+
+.services {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  padding:50px 50px 25px 50px;
+  margin: 0 auto;
+}
+
+.singleService {
+  width:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin:0px 10px;
+}
+
+.singleService img {
+  height:200px;
+}
+
+.singleService h2 {
+  font-size:1.2rem;
+  color:white;
+  font-weight: 500;
+  margin-bottom:0px;
+}
+
+.singleService p {
+  font-size:24px;
+  font-weight:100;
+  color:white;
+}
+
+.footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:80px;
+}
+
+.footerContact {
+  margin-left:40px;
+  margin-top:70px;
+}
+
+.footerContact h3 {
+  color:white;
+  font-weight:400;
+  letter-spacing: 1px;
+}
+
+.socialMedia img {
+  margin:20px;
+}
+
+.socialMedia {
+margin-left:000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testimonialsContainer {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  background-image: url('/images/test-background.jpg');
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position: 0px -800px;
+  background-size: cover;
+}
+
+.testimonials {
+  width:800px;
+  margin:100px 0px;
+  background-color:rgba(15,15,15,.8);
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:100px;
+
+}
+
+.testimonials h3 {
+  color:white;
+  font-size:2.5rem;
+}
+
+.testimonials p {
+  padding:0px 150px;
+  margin-top:-30px;
+  color:white;
+  font-weight: 100;
+}
+
+.testimonials img {
+  border-radius: 160px;
+}
+
+.serviceSection {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  background-color: #252525;
+  padding:80px 0px;
+}
+
+.serviceSectionBlack {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  background-color: #151515;
+  padding:80px 0px;
+}
+
+
+
+.iframeContainerLeft {
+  width:40%;
+  min-width:30%;
+  display:block;
+  margin-left:50px;
+  margin-right:-60px;
+}
+
+.serviceContent {
+  width:60%;
+  margin-left:50px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.serviceContent p {
+  padding:0px 100px;
+  color:white;
+  font-weight:200;
+  font-size:24px;
+  /* letter-spacing: 1px; */
+}
+
+.contentSubhead {
+  font-size:2.5rem;
+  color:white;
+  font-weight:300;
+  margin-bottom:0px;
+}
+
+.videoEmbedDesktop img {
+}
+
+.serviceContent ul{
+  padding:0px 150px;
+  color:white;
+  font-size:24px;
+  font-weight:200;
+}
+
+.serviceContent ul {
+
+  list-style: none; /* Remove default bullets */
+
+}
+
+.serviceContent ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #50BFF4; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.serviceContent ul li {
+  margin:8px 0px;
+}
+
+.leftImage {
+  width:35%;
+  height:800px;
+  background-image: url('/images/VT-36.jpg');
+  background-size:cover;
+  background-position:-500px 0px;
+  margin-right:-100px;
+}
+
+.leftImage2 {
+  width:35%;
+  height:800px;
+  background-image: url('/images/IMG_5923.jpg');
+  background-size:cover;
+  background-position:-350px 0px;
+  margin-right:-100px;
+}
+
+
+
+
+/* RESPONSIVE  */
+
+@media screen and (min-width:769px) {
+  .heroBanner {
+    min-width:1200px;
+  }
+
+  .services {
+    min-width:1300px;
+  }
+}
+/* TABLET */
+
+@media screen and (max-width:768px) {
+.heroBanner {
+  background-position: 0px -100px;
+  height:400px;
+  width:auto;
+
+}
+
+.heroBannerContent {
+  width:auto;
+}
+
+.mainHeader {
+  font-size:3.5rem;
+  line-height: normal;
+}
+
+.subHead {
+  font-size:1.4rem;
+  margin-top:10px;
+  padding:0px 30px;
+}
+
+.contentHeader {
+  line-height: normal;
+}
+
+.singleService {
+  width:220px;
+}
+
+.serviceSection {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceContent {
+  width:95%;
+  margin-left:0px;
+}
+
+.serviceSectionBlack {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframeContainerLeft {
+  width:70%;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.leftImage {
+  width:80%;
+  margin-right:0px;
+  height:400px;
+}
+
+.leftImage2 {
+  width:80%;
+  margin-right:0px;
+  height:400px;
+  background-position:0px 0px;
+  background-repeat: no-repeat;
+}
+
+.contentContainer {
+  width:100%;
+}
+
+.footer {
+  margin-bottom:500px;
+}
+
+.about p {
+  padding:0px 40px;
+}
+
+.overlay {
+  padding:0px 70px;
+}
+
+.singleService img {
+  height:auto;
+}
+
+.singleService h2 {
+  text-align:center;
+}
+
+.singleService .button {
+  font-size:1.2rem;
+  width:140px!important;
+}
+
+.testimonialsContainer {
+  background-position: 0px 0px;
+}
+
+
+.footerContact h3 {
+  margin-left:45px;
+}
+
+.footer {
+  padding:30px;
+  padding-top:0px;
+}
+}
+
+/* MOBILE */
+
+
+
+@media screen and (max-width:440px) {
+  .heroBanner {
+    height:auto;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:0 -50px!important;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroBannerContent {
+    width: auto;
+  }
+
+  .mainHeader {
+    font-size:4rem;
+  }
+
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .videoEmbedDesktop {
+    display:none;
+  }
+
+  .overlay {
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .mail {
+    flex-direction: column;
+    background-position:-600px -200px;
+  }
+
+  .mail h3 {
+    line-height: normal;
+  }
+
+  .footerContact h3 {
+    font-size:13px;
+  }
+
+  .footer {
+    padding:30px;
+    /* margin-bottom:400px; */
+  }
+
+  .socialMedia img {
+    width:40px;
+    margin:8px;
+  }
+
+  .leftImage {
+    background-position:0px 0px;
+    background-repeat: no-repeat;
+    height:300px;
+    width:400px;
+    background-attachment: fixed;
+    background-size:contain;
+  }
+
+  .leftImage2 {
+    background-position:0px 0px;
+    background-repeat: no-repeat;
+    height:300px;
+    width:400px;
+    background-attachment: fixed;
+    background-size:contain;
+  }
+
+  .serviceSection {
+    flex-direction: column;
+    padding-top:0px;
+  }
+
+  .serviceSectionBlack {
+    flex-direction: column;
+  }
+
+  .serviceContent {
+    width:auto;
+    margin-left:0px;
+    padding:30px;
+  }
+
+  .contentSubhead {
+    text-align: center;
+  }
+
+  .serviceContent p {
+    padding:0px 20px;
+  }
+
+  .serviceContent ul {
+    padding:0 60px;
+  }
+
+  .serviceContent ul li {
+    margin: 20px 0px;
+  }
+
+  .singleService {
+    margin-bottom:30px;
+  }
+}
